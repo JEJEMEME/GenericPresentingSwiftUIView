@@ -35,8 +35,8 @@ class ViewController: UIViewController {
 ```
 
 - Note
-*You need to hide the view separately.*
-*You must remove it from the view by creating a subview in the root view.*
+- **You need to hide the view separately.**
+- **You must remove it from the view by creating a subview in the root view.**
 
 # Installation
 
@@ -56,7 +56,7 @@ or `File` -> `Add Packages...` -> Search `https://github.com/JEJEMEME/GenericPre
 Contributions are welcome! If you'd like to improve GenericPresentingSwiftUIView, please feel free to fork the repository, make changes, and submit a pull request.
 
 # License
-                                            GenericPresentingSwiftUIView is available under the MIT license. See the LICENSE file for more info.
+GenericPresentingSwiftUIView is available under the MIT license. See the LICENSE file for more info.
 
 # Acknowledgements
 Created by JEJEMEME, a passionate Swift developer and open-source contributor.
