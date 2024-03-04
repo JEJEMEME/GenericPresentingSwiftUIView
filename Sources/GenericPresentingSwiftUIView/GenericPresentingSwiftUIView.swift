@@ -2,8 +2,8 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-class GenericHostingController<T: View>: UIHostingController<T> {
-    override init(rootView: T) {
+public class GenericHostingController<T: View>: UIHostingController<T> {
+    public override init(rootView: T) {
         super.init(rootView: rootView)
     }
 
@@ -16,8 +16,12 @@ class GenericHostingController<T: View>: UIHostingController<T> {
 @available(iOS 13.0, *)
 public struct GenericPresentingSwiftUIView<T: View>: UIViewRepresentable {
     
-    private var view: GenericHostingController<AnyView>?
+    var view: GenericHostingController<AnyView>?
 
+    public init(view: GenericHostingController<AnyView>? = nil) {
+        self.view = view
+    }
+    
     public func makeUIView(context: Context) -> UIView {
         return UIView()
     }
