@@ -14,7 +14,7 @@ public class GenericHostingController<T: View>: UIHostingController<T> {
 
 
 @available(iOS 13.0, *)
-public struct GenericPresentingSwiftUIView<T: View>: UIViewRepresentable {
+struct GenericPresentingSwiftUIView<T: View>: UIViewRepresentable {
     
     var view: GenericHostingController<AnyView>?
 
@@ -22,11 +22,11 @@ public struct GenericPresentingSwiftUIView<T: View>: UIViewRepresentable {
         self.view = view
     }
     
-    public func makeUIView(context: Context) -> UIView {
+    func makeUIView(context: Context) -> UIView {
         return UIView()
     }
 
-    public func updateUIView(_ uiView: UIView, context: Context) {
+    func updateUIView(_ uiView: UIView, context: Context) {
         // 아무 업데이트가 필요하지 않을 때는 비워둡니다.
     }
     
